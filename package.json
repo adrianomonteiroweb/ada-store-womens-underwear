@@ -1,0 +1,16 @@
+{
+  "name": "ada-store-womens-underwear",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Adriano Monteiro <adrianomonteiroweb@gmail.com>",
+  "repository": "git@github.com:adrianomonteiroweb/ada-store-womens-underwear.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
