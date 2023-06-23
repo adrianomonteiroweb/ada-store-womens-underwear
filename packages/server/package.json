@@ -1,0 +1,22 @@
+{
+  "name": "@ada-store-womens-underwear/server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node public/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "jest --runInBand  --detectOpenHandles --forceExit"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "*"
+  }
+}
