@@ -1,5 +1,7 @@
 import express, { Express } from "express";
 
+import routes from "./routes";
+
 class App {
   private expressApp: Express;
 
@@ -12,6 +14,10 @@ class App {
     this.expressApp.listen(port, () => {
       console.log(`Server is running on ${port} port`);
     });
+  }
+
+  public useRoutes(): void {
+    this.expressApp.use(routes);
   }
 }
 
