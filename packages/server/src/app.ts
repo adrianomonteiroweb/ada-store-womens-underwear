@@ -1,6 +1,18 @@
-import express from 'express';
+import express, { Express } from "express";
 
-const app = express();
-app.use(express.json());
+class App {
+  private expressApp: Express;
 
-export default app;
+  constructor() {
+    this.expressApp = express();
+    this.expressApp.use(express.json());
+  }
+
+  public startServer(port: number): void {
+    this.expressApp.listen(port, () => {
+      console.log(`Server is running on ${port} port`);
+    });
+  }
+}
+
+export default App;

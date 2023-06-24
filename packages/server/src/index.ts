@@ -1,3 +1,6 @@
-import app from "./app";
+import App from "./app"
 
-app.listen(3000, () => console.log(`Server is running on ${3000}`));
+const isApp = new App();
+const PORT: number = 3000;
+
+isApp.startServer(PORT);
