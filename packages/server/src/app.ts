@@ -8,6 +8,8 @@ class App {
   constructor() {
     this.expressApp = express();
     this.expressApp.use(express.json());
+
+    this.useRoutes();
   }
 
   public startServer(port: number): void {
@@ -18,6 +20,8 @@ class App {
 
   public useRoutes(): void {
     this.expressApp.use(routes);
+    console.log("using routes");
+    
   }
 }
 

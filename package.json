@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "yarn workspace @ada-store-womens-underwear/server dev"
+    "dev": "yarn workspace @ada-store-womens-underwear/server dev",
+    "test": "yarn workspace @ada-store-womens-underwear/server test"
   },
   "workspaces": {
     "packages": [

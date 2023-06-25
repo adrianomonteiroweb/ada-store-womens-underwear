@@ -1,5 +1,7 @@
+import AdminController from "../../src/controllers/adminController"
+
 describe("Admin controller tests", () => {
-    let adminController: any;
+    let adminController: any = new AdminController();
     let adminService: any;
 
     beforeEach(() => {
