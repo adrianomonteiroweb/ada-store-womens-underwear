@@ -12,6 +12,14 @@ class AdminService {
     async getAllAdmins(): Promise<IAdmin[]> {
       return await this.adminRepository.getAllAdmins();
     }
+
+    async createAdmin(
+      admin: IAdmin
+      ): Promise<IAdmin> {
+      return await this.adminRepository.createAdmin(
+        admin
+      );
+    }
 }
 
 export default AdminService;

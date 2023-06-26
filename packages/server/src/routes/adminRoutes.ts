@@ -20,7 +20,10 @@ class AdminRoutes {
   }
 
   private setupRoutes(): void {
-    this.router.get('/admins', this.isAdminController.getAllAdmins.bind(this.isAdminController));
+    // Get all admins
+    this.router.get("/admins", this.isAdminController.getAllAdmins.bind(this.isAdminController));
+    // create an admin
+    this.router.post("/admin", this.isAdminController.createAdmin.bind(this.isAdminController));
 
     this.router.get("/", this.isAdminController.getAdmin.bind(this.isAdminController));
   }
