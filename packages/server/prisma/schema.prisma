@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://adrianomonteirodev:adrianomonteirodev@cluster0.b2gy5pv.mongodb.net/adastoreDB?retryWrites=true&w=majority"
+}
+
+model AdminModel {
+  adminId String @id @default(auto()) @map("_id") @db.ObjectId
+  firstName String
+  lastName String
+  email String @unique
+  password String
+  role String
+  createdDate String
+  lastLoginDate String
+  isActive Boolean
+  permissions String[]
+}

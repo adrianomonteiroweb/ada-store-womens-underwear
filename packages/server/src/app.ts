@@ -20,8 +20,6 @@ class App {
 
   public useRoutes(): void {
     this.expressApp.use(routes);
-    console.log("using routes");
-    
   }
 }
 
